@@ -261,13 +261,14 @@ nav a:hover {
 }
 
 .hebergements-title {
+    width: 50.688rem;
     padding-bottom: 1.875rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .hebergements-card {
+    display: flex;
+    flex-wrap: wrap;
     width: 15.625rem;
     height: 12.953rem;
     background-color: white;
@@ -296,9 +297,18 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
+.hebergement-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-card {
+    display: flex;
+    gap: 30px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/

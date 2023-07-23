@@ -1,1 +1,1 @@
-# booki-starter-pack
+Booki project for OC P3 (HTML & CSS)

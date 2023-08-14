@@ -1,4 +1,10 @@
 /****** General ***********/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   font-family: "Raleway", sans-serif;
   padding: 0;
@@ -9,6 +15,12 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
 }
 
 .fa-solid {
@@ -432,14 +444,21 @@ footer {
     margin-top: 50px;
   }
 
+.card-href {
+    width: 17.1667rem;
+}
+
   .populaires-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1.25rem;
+    width: 100%;
+
   }
 
   .populaires-cards .card {
-    width: 30%;
+    width: 100%;
   }
 
   .populaires-cards .card-title {
@@ -449,6 +468,11 @@ footer {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+.populaires-cards .card-content {
+    width: 11.44444rem;
+    min-width: 1.44444rem;
+}
 
   .activity-card {
     height: 16.875rem;
@@ -567,7 +591,13 @@ footer {
   }
   .hebergements-and-populaires section {
     border-radius: 0;
+    padding: 1.88rem 1.25rem;
   }
+
+  .card-href {
+    width: 100%;
+  }
+
   .populaires {
     order: -1;
     display: block;
@@ -604,10 +634,6 @@ footer {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
-  }
-
-  .activity-marseille {
-    padding: 0 1.88rem;
   }
 
   .div-activity-card {
